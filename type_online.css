@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  color: #f17e12;
+}
+
+.mainDiv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #233440;
+}
+
+.centerDiv {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  padding: 10px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-size: 2.1 rem;
+  /* border: 2px solid white;
+  border-radius: 10px; */
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  user-select: none;
+}
+.timer {
+  display: inline-block;
+  /* border: 3px solid white; */
+  /* padding: 7px 10px; */
+  margin: 5px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  background-color: #221e1e;
+}
+
+#msg {
+  user-select: none;
+}
+
+textarea {
+  background-color: #221e1e;
+  border-radius: 10px 10px 10px 10px;
+  border: 4px solid white;
+  padding: 10px;
+  font-size: 1rem;
+  color: #f17e12;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #f17e12;
+}
+
+.mainbtn {
+  margin-top: 7px;
+  padding: 7px 30px;
+  border-radius: 20px;
+  border: 3px solid white;
+  background: #221e1e;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.mainbtn:hover {
+  border: 3px solid white;
+  background: whitesmoke;
+}
+
+#navbar{
+  display:flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  left:0px;
+  font-weight: bolder;
+}
+
+#navbar::before{
+  content:"";
+  background-color: #233440;
+  height:100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#navbar ul{
+  display: flex;
+}
+
+.item{
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  display: block;
+  border-bottom: 2px solid white;
+}
+
+.item:hover{
+  background-color: white;
+}
+
+#navbar ul li{
+  list-style: none;
+  cursor: pointer;
+}
+
+#logo{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 10px;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 5px;
+  user-select: none;
+}
